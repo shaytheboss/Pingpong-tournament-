@@ -1,0 +1,8 @@
+[
+  {
+    "image": "promo1.png",
+    "text": "Early Bird Tickets Available!",
+    "link": "tickets.html"
+  }
+  // Add more promotions as needed...
+]
