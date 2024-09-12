@@ -1,0 +1,10 @@
+[
+  {
+    "match_id": 1,
+    "team1": "Smashing Duo",
+    "team2": "Ping Masters",
+    "score": "2-1",
+    "winner": "Smashing Duo"
+  }
+  // Add more results as needed...
+]
