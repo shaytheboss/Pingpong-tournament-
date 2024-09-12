@@ -1,0 +1,9 @@
+[
+  {
+    "team_name": "Smashing Duo",
+    "players": ["Alice Smith", "Bob Johnson"],
+    "logo": "smashing_duo.png",
+    "bio": "An experienced team with a passion for spin shots."
+  }
+  // Add more teams as needed...
+]
