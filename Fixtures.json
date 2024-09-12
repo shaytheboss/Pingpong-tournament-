@@ -1,0 +1,19 @@
+[
+  {
+    "match_id": 1,
+    "date": "2024-09-15",
+    "time": "10:00 AM",
+    "team1": "Smashing Duo",
+    "team2": "Ping Masters",
+    "location": "Main Hall"
+  },
+  {
+    "match_id": 2,
+    "date": "2024-09-15",
+    "time": "11:00 AM",
+    "team1": "Spin Doctors",
+    "team2": "Net Ninjas",
+    "location": "Court 2"
+  }
+  // Add more fixtures as needed...
+]
