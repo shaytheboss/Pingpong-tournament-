@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Promotions</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Header and Navigation -->
+  <header>
+    <h1>Promotions</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="fixtures.html">Fixtures & Results</a>
+      <a href="teams.html">Teams</a>
+      <a href="promotions.html">Promotions</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <div id="promotions-container"></div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Ping Pong Tournament</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="js/promotions.js"></script>
+</body>
+</html>
