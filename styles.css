@@ -1,0 +1,55 @@
+/* Global Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f8f9fa;
+  color: #212529;
+  margin: 0;
+  padding: 0;
+}
+
+header, footer {
+  background-color: #007bff;
+  color: #fff;
+  padding: 15px;
+}
+
+nav a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 20px;
+}
+
+h1, h2, h3, h4 {
+  color: #007bff;
+}
+
+/* Content Sections */
+.match, .team, .promotion {
+  background: #fff;
+  border: 1px solid #dee2e6;
+  margin: 15px 0;
+  padding: 20px;
+  border-radius: 8px;
+  transition: box-shadow 0.3s;
+}
+
+.match:hover, .team:hover, .promotion:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.promotion img, .team img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+footer {
+  text-align: center;
+}
