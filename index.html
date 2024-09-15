@@ -2,16 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ping Pong Championship</title>
   <link rel="stylesheet" href="css/styles.css">
-  <!-- Meta tags for responsiveness -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Favicon -->
-  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 <body>
-  <!-- Header and Navigation -->
-  <header>
+
+  <!-- Sticky Header with Navigation -->
+  <header class="sticky-header">
     <div class="container">
       <img src="images/logo.png" alt="Tournament Logo" class="logo">
       <nav>
@@ -23,14 +21,19 @@
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
+      <div class="menu-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </div>
   </header>
 
-  <!-- Hero Section -->
+  <!-- Hero Section with Animated Background -->
   <section class="hero">
     <div class="container">
-      <h1>Welcome to the Annual Ping Pong Championship</h1>
-      <p>Experience the thrill and excitement of world-class table tennis.</p>
+      <h1>Annual Ping Pong Championship</h1>
+      <p>Get ready for the biggest table tennis event of the year!</p>
       <a href="#" class="btn-primary">Get Tickets Now</a>
     </div>
   </section>
@@ -41,32 +44,51 @@
       <!-- Featured Matches -->
       <section class="featured-matches">
         <h2>Featured Matches</h2>
-        <!-- Add featured match details here -->
-      </section>
-
-      <!-- Latest News -->
-      <section class="latest-news">
-        <h2>Latest News</h2>
-        <!-- Add news items here -->
+        <div class="match-grid">
+          <div class="match-card">
+            <h3>Smashing Duo vs Ping Masters</h3>
+            <p>Date: Sept 25 | Time: 2:00 PM</p>
+          </div>
+          <div class="match-card">
+            <h3>Spin Doctors vs Net Ninjas</h3>
+            <p>Date: Sept 26 | Time: 3:00 PM</p>
+          </div>
+        </div>
       </section>
     </div>
   </main>
 
-  <!-- Promotional Banners -->
-  <aside class="promotions">
-    <!-- Add promotional content here -->
-  </aside>
+  <!-- Rotating Promotional Banner -->
+  <section class="promo-banner">
+    <div class="promo-slide">
+      <img src="images/promo1.jpg" alt="Early Bird Tickets">
+      <p>Get Early Bird Tickets Now!</p>
+    </div>
+    <div class="promo-slide">
+      <img src="images/promo2.jpg" alt="Merchandise Sale">
+      <p>Exclusive Ping Pong Merchandise Available</p>
+    </div>
+  </section>
 
-  <!-- Footer -->
+  <!-- Footer with Newsletter Signup -->
   <footer>
     <div class="container">
-      <p>&copy; 2024 Ping Pong Championship. All rights reserved.</p>
-      <ul class="social-links">
-        <li><a href="#"><img src="images/icon-facebook.png" alt="Facebook"></a></li>
-        <li><a href="#"><img src="images/icon-twitter.png" alt="Twitter"></a></li>
-        <li><a href="#"><img src="images/icon-instagram.png" alt="Instagram"></a></li>
+      <div class="newsletter">
+        <h3>Stay Updated</h3>
+        <p>Subscribe to our newsletter for the latest updates</p>
+        <form action="#">
+          <input type="email" placeholder="Enter your email" required>
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+      <ul class="footer-links">
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#">Contact Us</a></li>
       </ul>
+      <p>&copy; 2024 Ping Pong Championship. All rights reserved.</p>
     </div>
   </footer>
+
 </body>
 </html>
