@@ -3,7 +3,24 @@
     "match_id": 1,
     "team1": "Smashing Duo",
     "team2": "Ping Masters",
-    "score": "2-1",
+    "score1": 3,
+    "score2": 1,
+    "winner": "Smashing Duo"
+  },
+  {
+    "match_id": 2,
+    "team1": "Spin Doctors",
+    "team2": "Net Ninjas",
+    "score1": 2,
+    "score2": 3,
+    "winner": "Net Ninjas"
+  },
+  {
+    "match_id": 3,
+    "team1": "Smashing Duo",
+    "team2": "Net Ninjas",
+    "score1": 3,
+    "score2": 2,
     "winner": "Smashing Duo"
   }
   // Add more results as needed...
