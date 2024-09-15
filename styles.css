@@ -1,9 +1,9 @@
 /* Global Styles */
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  color: #333;
-  background-color: #f4f4f4;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
 }
 
 .container {
@@ -12,16 +12,19 @@ body {
   margin: 0 auto;
 }
 
-/* Header */
-header {
+/* Sticky Header */
+.sticky-header {
+  position: sticky;
+  top: 0;
   background-color: #002147;
   color: #fff;
-  padding: 10px 0;
+  z-index: 1000;
+  padding: 15px 0;
 }
 
 .logo {
-  float: left;
   width: 150px;
+  float: left;
 }
 
 nav {
@@ -42,25 +45,38 @@ nav ul li a {
   color: #fff;
   text-decoration: none;
   padding: 15px 20px;
+  font-weight: bold;
 }
 
 nav ul li a:hover,
 nav ul li a.active {
   background-color: #0055a5;
+  border-radius: 5px;
 }
 
-header::after {
-  content: "";
-  display: table;
-  clear: both;
+/* Menu Icon for Mobile */
+.menu-icon {
+  display: none;
+  cursor: pointer;
+}
+
+.menu-icon span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px;
+  background-color: #fff;
 }
 
 /* Hero Section */
 .hero {
   background: url('../images/hero-bg.jpg') no-repeat center center/cover;
+  height: 100vh;
   color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  padding: 100px 0;
 }
 
 .hero h1 {
@@ -80,6 +96,7 @@ header::after {
   text-decoration: none;
   font-size: 18px;
   border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
 
 .btn-primary:hover {
@@ -98,73 +115,117 @@ h2 {
   margin-bottom: 30px;
 }
 
-/* Cards */
-.match-card,
-.team-card,
-.promotion-card {
+.match-grid {
+  display: flex;
+  gap: 20px;
+}
+
+.match-card {
   background-color: #fff;
   border: 1px solid #ddd;
-  margin-bottom: 30px;
   padding: 20px;
-  border-radius: 5px;
+  border-radius: 8px;
+  flex: 1;
+  transition: box-shadow 0.3s ease;
 }
 
-.match-card:hover,
-.team-card:hover,
-.promotion-card:hover {
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+.match-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.team-logo,
-.promo-image {
-  width: 100%;
-  border-radius: 5px;
-  margin-bottom: 15px;
-}
-
-/* Promotions */
-.promotions {
+/* Rotating Promotional Banner */
+.promo-banner {
   background-color: #e0e0e0;
-  padding: 20px 0;
-}
-
-/* Footer */
-footer {
-  background-color: #002147;
-  color: #fff;
   padding: 20px 0;
   text-align: center;
 }
 
-footer p {
-  margin: 0;
-}
-
-.social-links {
-  list-style: none;
-  margin: 10px 0 0;
-  padding: 0;
-}
-
-.social-links li {
+.promo-slide {
   display: inline-block;
-  margin: 0 5px;
+  width: 100%;
+  max-width: 300px;
+  padding: 20px;
+  background-color: #fff;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.social-links li a img {
-  width: 24px;
-  height: 24px;
+.promo-slide img {
+  width: 100%;
+  border-radius: 8px;
 }
 
-/* Responsive Styles */
+/* Footer with Newsletter */
+footer {
+  background-color: #002147;
+  color: #fff;
+  padding: 50px 0;
+  text-align: center;
+}
+
+footer .newsletter h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+footer .newsletter form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+footer .newsletter input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  width: 250px;
+}
+
+footer .newsletter button {
+  padding: 10px 20px;
+  background-color: #ffcc00;
+  color: #002147;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+footer .footer-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+footer .footer-links li {
+  display: inline-block;
+}
+
+footer .footer-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+footer p {
+  margin-top: 30px;
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
-  .logo,
   nav {
-    float: none;
-    text-align: center;
+    display: none;
   }
 
-  nav ul li {
+  .menu-icon {
     display: block;
+  }
+
+  .match-grid {
+    flex-direction: column;
   }
 }
