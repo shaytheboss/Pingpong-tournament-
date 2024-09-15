@@ -1,7 +1,7 @@
 // Mobile Navigation Toggle
 const menuToggle = document.getElementById('mobile-menu');
-const navMenu = document.querySelector('.nav-menu');
+const navLinks = document.getElementById('nav-links');
 
 menuToggle.addEventListener('click', () => {
-  navMenu.classList.toggle('active');
+  navLinks.classList.toggle('active');
 });
