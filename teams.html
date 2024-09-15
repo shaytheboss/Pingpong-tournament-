@@ -1,30 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>Teams</title>
   <link rel="stylesheet" href="css/styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
   <!-- Header and Navigation -->
   <header>
-    <h1>Teams</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="fixtures.html">Fixtures & Results</a>
-      <a href="teams.html">Teams</a>
-      <a href="promotions.html">Promotions</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+    <div class="container">
+      <img src="images/logo.png" alt="Tournament Logo" class="logo">
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="fixtures.html">Fixtures & Results</a></li>
+          <li><a href="teams.html" class="active">Teams</a></li>
+          <li><a href="promotions.html">Promotions</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <!-- Main Content -->
   <main>
-    <div id="teams-container"></div>
+    <div class="container">
+      <h2>Teams</h2>
+      <div id="teams-container"></div>
+    </div>
   </main>
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 2024 Ping Pong Tournament</p>
+    <div class="container">
+      <p>&copy; 2024 Ping Pong Championship. All rights reserved.</p>
+    </div>
   </footer>
 
   <!-- JavaScript -->
