@@ -1,33 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Fixtures & Results</title>
+  <meta charset="UTF-8">
+  <title>Fixtures & Playoffs</title>
   <link rel="stylesheet" href="css/styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-  <!-- Header and Navigation (same as index.html) -->
-  <header>
-    <h1>Fixtures & Results</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="fixtures.html">Fixtures & Results</a>
-      <a href="teams.html">Teams</a>
-      <a href="promotions.html">Promotions</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
+
+  <!-- Include Header -->
+  <!-- (Same as in index.html) -->
 
   <!-- Main Content -->
   <main>
-    <div id="fixtures-container"></div>
+    <div class="container">
+      <h2>Playoffs Bracket</h2>
+      <div class="bracket-container">
+        <!-- Playoffs Bracket Diagram -->
+        <div id="bracket"></div>
+      </div>
+    </div>
   </main>
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2024 Ping Pong Tournament</p>
-  </footer>
+  <!-- Include Footer -->
+  <!-- (Same as in index.html) -->
 
   <!-- JavaScript -->
-  <script src="js/fixtures.js"></script>
+  <script src="js/bracket.js"></script>
 </body>
 </html>
