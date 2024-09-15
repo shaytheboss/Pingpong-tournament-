@@ -5,21 +5,13 @@ fetch('data/fixtures.json')
     const container = document.getElementById('fixtures-container');
     fixtures.forEach(match => {
       const matchDiv = document.createElement('div');
-      matchDiv.className = 'match';
+      matchDiv.className = 'match-card';
       matchDiv.innerHTML = `
-        <h4>${match.team1} vs ${match.team2}</h4>
-        <p>Date: ${match.date} | Time: ${match.time}</p>
-        <p>Location: ${match.location}</p>
+        <h3>${match.team1} <span>vs</span> ${match.team2}</h3>
+        <p><strong>Date:</strong> ${match.date} | <strong>Time:</strong> ${match.time}</p>
+        <p><strong>Location:</strong> ${match.location}</p>
       `;
       container.appendChild(matchDiv);
     });
   })
   .catch(error => console.error('Error loading fixtures:', error));
-
-// Fetch and display results (if on the same page)
-fetch('data/results.json')
-  .then(response => response.json())
-  .then(results => {
-    // Code to display results
-  })
-  .catch(error => console.error('Error loading results:', error));
