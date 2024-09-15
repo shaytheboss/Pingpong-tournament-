@@ -5,10 +5,10 @@ fetch('data/promotions.json')
     const container = document.getElementById('promotions-container');
     promotions.forEach(promo => {
       const promoDiv = document.createElement('div');
-      promoDiv.className = 'promotion';
+      promoDiv.className = 'promotion-card';
       promoDiv.innerHTML = `
         <a href="${promo.link}">
-          <img src="images/${promo.image}" alt="Promotion">
+          <img src="images/${promo.image}" alt="Promotion" class="promo-image">
           <p>${promo.text}</p>
         </a>
       `;
