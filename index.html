@@ -1,33 +1,72 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Ping Pong Tournament</title>
+  <meta charset="UTF-8">
+  <title>Ping Pong Championship</title>
   <link rel="stylesheet" href="css/styles.css">
-  <!-- Include Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <!-- Meta tags for responsiveness -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 <body>
   <!-- Header and Navigation -->
   <header>
-    <h1>Welcome to the Ping Pong Tournament</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="fixtures.html">Fixtures & Results</a>
-      <a href="teams.html">Teams</a>
-      <a href="promotions.html">Promotions</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+    <div class="container">
+      <img src="images/logo.png" alt="Tournament Logo" class="logo">
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="fixtures.html">Fixtures & Results</a></li>
+          <li><a href="teams.html">Teams</a></li>
+          <li><a href="promotions.html">Promotions</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1>Welcome to the Annual Ping Pong Championship</h1>
+      <p>Experience the thrill and excitement of world-class table tennis.</p>
+      <a href="#" class="btn-primary">Get Tickets Now</a>
+    </div>
+  </section>
 
   <!-- Main Content -->
   <main>
-    <!-- Add homepage content here -->
-    <p>Experience the thrill of the game!</p>
+    <div class="container">
+      <!-- Featured Matches -->
+      <section class="featured-matches">
+        <h2>Featured Matches</h2>
+        <!-- Add featured match details here -->
+      </section>
+
+      <!-- Latest News -->
+      <section class="latest-news">
+        <h2>Latest News</h2>
+        <!-- Add news items here -->
+      </section>
+    </div>
   </main>
+
+  <!-- Promotional Banners -->
+  <aside class="promotions">
+    <!-- Add promotional content here -->
+  </aside>
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 2024 Ping Pong Tournament</p>
+    <div class="container">
+      <p>&copy; 2024 Ping Pong Championship. All rights reserved.</p>
+      <ul class="social-links">
+        <li><a href="#"><img src="images/icon-facebook.png" alt="Facebook"></a></li>
+        <li><a href="#"><img src="images/icon-twitter.png" alt="Twitter"></a></li>
+        <li><a href="#"><img src="images/icon-instagram.png" alt="Instagram"></a></li>
+      </ul>
+    </div>
   </footer>
 </body>
 </html>
