@@ -5,11 +5,11 @@ fetch('data/teams.json')
     const container = document.getElementById('teams-container');
     teams.forEach(team => {
       const teamDiv = document.createElement('div');
-      teamDiv.className = 'team';
+      teamDiv.className = 'team-card';
       teamDiv.innerHTML = `
-        <img src="images/${team.logo}" alt="${team.team_name} Logo">
+        <img src="images/${team.logo}" alt="${team.team_name} Logo" class="team-logo">
         <h3>${team.team_name}</h3>
-        <p>Players: ${team.players.join(', ')}</p>
+        <p><strong>Players:</strong> ${team.players.join(' & ')}</p>
         <p>${team.bio}</p>
       `;
       container.appendChild(teamDiv);
