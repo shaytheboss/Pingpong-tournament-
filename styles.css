@@ -24,6 +24,43 @@ header {
 
 .logo {
   width: 150px;
+
+  /* Playoffs Bracket */
+.bracket-container {
+  overflow-x: auto;
+}
+
+.bracket {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.round {
+  margin: 0 20px;
+}
+
+.matchup {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.team {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+}
+
+.team-name {
+  font-weight: bold;
+}
+
+.score {
+  font-weight: bold;
+}
   float: left;
 }
 
