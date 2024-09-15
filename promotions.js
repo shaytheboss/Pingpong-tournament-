@@ -1,18 +1,26 @@
-// Fetch and display promotions
-fetch('data/promotions.json')
-  .then(response => response.json())
-  .then(promotions => {
-    const container = document.getElementById('promotions-container');
-    promotions.forEach(promo => {
-      const promoDiv = document.createElement('div');
-      promoDiv.className = 'promotion-card';
-      promoDiv.innerHTML = `
-        <a href="${promo.link}">
-          <img src="images/${promo.image}" alt="Promotion" class="promo-image">
-          <p>${promo.text}</p>
-        </a>
-      `;
-      container.appendChild(promoDiv);
-    });
-  })
-  .catch(error => console.error('Error loading promotions:', error));
+// Social Sharing Functionality
+const shareButtons = document.querySelectorAll('.share-button');
+
+shareButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const platform = button.getAttribute('data-platform');
+    const url = encodeURIComponent(window.location.href);
+    const text = encodeURIComponent('Check out the Ping Pong Championship!');
+
+    let shareUrl = '';
+
+    switch (platform) {
+      case 'facebook':
+        shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${url}`;
+        break;
+      case 'twitter':
+        shareUrl = `https://twitter.com/intent/tweet?url=${url}&text=${text}`;
+        break;
+      case 'whatsapp':
+        shareUrl = `https://api.whatsapp.com/send?text=${text}%20${url}`;
+        break;
+    }
+
+    window.open(shareUrl, '_blank');
+  });
+});
